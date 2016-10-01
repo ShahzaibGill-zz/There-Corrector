@@ -1,10 +1,10 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 13 px;
-  letter-spacing: 2px;
 }
-textarea {
+#inputBox {
    font-family: inherit;
+   letter-spacing: 2px;
 }
 
 #status {
@@ -15,6 +15,7 @@ textarea {
   max-width: 400px;
   padding-bottom: 5px;
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .button {
