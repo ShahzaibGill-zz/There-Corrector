@@ -1,40 +1,15 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-      }
-    </style>
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
+    <title>There Corrector</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
-  <body>
-    <div id="status"></div>
-    <textarea id="input"  name="textbox" rows="4" cols="50">
-      At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
-    </textarea>
-    <button id="submitbutton">Submit</button>
-    <img id="image-result" hidden>
+  <style></style>
+  <body class="tooltip-container">
+    <div id="status">Enter text to be corrected below:</div>
+    <textarea id="inputBox"  name="textbox" rows="4" cols="50"></textarea>
+    <button id="submitbutton" class="button">c o r r e c t</button>
   </body>
 </html>
 <script src="popup.js"></script>
