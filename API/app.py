@@ -1,4 +1,5 @@
 import nltk as nlp
+import re
 from flask import Flask
 from flask_cors import CORS, cross_origin
 app = Flask(__name__)
@@ -35,7 +36,7 @@ def stringCorrector(text):
                     inputText[index] = 'They\'re'
                 else:
                     inputText[index] = 'they\'re'
-    outputText = ' '.join(inputText)
+    outputText = re.sub(r' (\W)',r'\1',' '.join(inputText))
     return outputText
 
 if __name__ == "__main":
