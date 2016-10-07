@@ -26,12 +26,12 @@ def stringCorrector(text):
                     inputText[index] = 'There'
                 else:
                     inputText[index] = 'there'
-            elif taggedText[index + 1][1] in ('NN', 'NNS', 'NNP', 'NNPS'):
+            elif taggedText[index + 1][1] in ('NN', 'NNS', 'NNP', 'NNPS', 'JJS'):
                 if index == 0 or (index - 1 >= 0 and inputText[index - 1] == '.'):
                     inputText[index] = 'Their'
                 else:
                     inputText[index] = 'their'
-            elif taggedText[index + 1][1] in ('IN', 'JJ', 'VBG', 'RB','RBR','RBS'):
+            elif taggedText[index + 1][1] in ('IN', 'JJ', 'JJR' 'VBG', 'RB','RBR','RBS','PDT','UH'):
                 if index == 0 or (index - 1 >= 0 and inputText[index - 1] == '.'):
                     inputText[index] = 'They\'re'
                 else:
