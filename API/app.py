@@ -37,7 +37,7 @@ def stringCorrector(text):
                 else:
                     inputText[index] = 'they\'re'
     outputText = re.sub(r' (\W)',r'\1',' '.join(inputText))
-    print(outputText)
+    return outputText
 
 if __name__ == "__main":
     app.run()
