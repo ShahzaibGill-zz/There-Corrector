@@ -21,7 +21,7 @@ def stringCorrector(text):
                 del inputText[index - 1]
                 del taggedText[index -1]
                 index = index - 1
-            if taggedText[index + 1][1] in ('VB', 'VBD', 'VBN', 'VBP', 'VBZ', 'MD','DB'):
+            if taggedText[index + 1][1] in ('VB', 'VBD', 'VBN', 'VBP', 'VBZ', 'MD','DT'):
                 if index == 0 or (index - 1 >= 0 and inputText[index - 1] == '.'):
                     inputText[index] = 'There'
                 else:
@@ -37,7 +37,7 @@ def stringCorrector(text):
                 else:
                     inputText[index] = 'they\'re'
     outputText = re.sub(r' (\W)',r'\1',' '.join(inputText))
-    return outputText
+    print(outputText)
 
 if __name__ == "__main":
     app.run()
