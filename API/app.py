@@ -21,7 +21,7 @@ def stringCorrector(text):
                 del inputText[index - 1]
                 del taggedText[index -1]
                 index = index - 1
-            if taggedText[index + 1][1] in ('VB', 'VBD', 'VBN', 'VBP', 'VBZ', 'MD'):
+            if taggedText[index + 1][1] in ('VB', 'VBD', 'VBN', 'VBP', 'VBZ', 'MD','DB'):
                 if index == 0 or (index - 1 >= 0 and inputText[index - 1] == '.'):
                     inputText[index] = 'There'
                 else:
