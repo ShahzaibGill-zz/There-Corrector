@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "There Corrector",
   "description": "This extension corrects the use of 'there',their' and 'they're' using Natural Language Processing",
-  "version": "1.3",
+  "version": "1.4",
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
